@@ -1,0 +1,86 @@
+.box {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+
+button {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  background-color: #483D8B;
+  color: white;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #6A5ACD;
+}
+
+button:focus {
+  background-color: #E6E6FA;
+  color: black;
+}
+
+h3 {
+  text-align: center;
+  font-size: 22px;
+  color: white;
+}
+
+h5 {
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+  border-bottom:1px solid #6A5ACD;
+}
+
+table {
+  position: relative;
+  padding: 10px;
+  left: 30%;
+  align-items: center;
+  align-content: center;
+  width: 40%;
+}
+
+table thead {
+  background-color: #483D8B;
+}
+table thead th{
+  border-bottom: 1px solid white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+table tr td{
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+h6{
+  font-size: 18px;
+}
+
+h6 h2 {
+  position: relative;
+  padding: 8px;
+}
+
+.premium {
+  background-color: #B8860B;
+}
+
+.fc {
+  background-color: #778899;
+}
+
+.sc {
+  background-color: #A0522D;
+}
