@@ -1,0 +1,45 @@
+<div class="box">
+  <h1>Passenger Details</h1>
+  <hr>
+  <h3>Passenger Type</h3>
+  <button (click) = "allList()">ALL</button>
+  <button (click) = "setType('Premium')">PREMIUM</button>
+  <button (click) = "setType('Firstclass')">FIRSTCLASS</button>
+  <button (click) = "setType('Secondclass')">SECONDCLASS</button>
+
+ 
+
+  
+
+ 
+
+  <h6 *ngFor = "let indPass of passengers">
+      <span *ngIf = "pType != null && indPass.ticketType === pType">
+        <h2 [ngClass] = "
+        {'premium' : pType === 'Premium',
+        'fc' : pType === 'Firstclass',
+        'sc' : pType === 'Secondclass'}">
+        {{pType}}</h2>
+      Passenger Name : {{indPass.name}}</span>
+  </h6>
+
+ 
+
+  <table *ngIf = "msg != null && msg == 'all'">
+    <thead>
+      <th>Passenger Name</th>
+      <th>Ticket Type</th>
+    </thead>
+
+ 
+
+    <tr *ngFor = "let indPass of passengers">
+      <td>{{indPass.name}}</td>
+      <td>{{indPass.ticketType}}</td>
+    </tr>
+
+ 
+
+  </table>
+</div>
+ 
